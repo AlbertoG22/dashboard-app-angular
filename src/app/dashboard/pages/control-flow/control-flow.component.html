@@ -1,8 +1,7 @@
-
 <section class="grid grid-cols-1 md:grid-cols-2 gap-3">
 
   <!-- Nuevo if -->
-   <div class="bg-white rounded shadow p-10">
+  <div class="bg-white rounded shadow p-10">
     <h2 class="text-2xl font-bold mb-5">if: {{ showContent() }}</h2>
 
     <button
@@ -16,7 +15,23 @@
     } @else {
       <p>**********</p>
     }
+  </div>
 
-   </div>
 
+  <!-- Nuevo switch -->
+  <div class="bg-white rounded shadow p-10">
+    <h2 class="text-3xl ">Nota: {{ grade() }}</h2>
+    @switch ( grade() ) {
+      @case ( 'A' ) {
+        <p>Arriba de 90</p>
+      }
+      @case ( 'B' ) {
+        <p>Arriba de 80</p>
+      }
+      @default {
+        <p>Reprobado</p>
+      }
+    }
+  </div>
 </section>
+
