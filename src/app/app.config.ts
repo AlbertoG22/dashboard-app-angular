@@ -8,10 +8,10 @@ export const appConfig: ApplicationConfig = {
     provideRouter(
       routes,
       withViewTransitions({
-        skipInitialTransition: true,
-        onViewTransitionCreated(transitionInfo) {
-          console.log({ transitionInfo });
-        },
+        // skipInitialTransition: true,
+        // onViewTransitionCreated(transitionInfo) {
+        //   console.log({ transitionInfo });
+        // },
       }),
     ),
   ]
